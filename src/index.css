@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.gradiant1 {
+  background-image: linear-gradient(to bottom, #39d5ff, #ffffff, #f209db);
+  width: 283.89px;
+  height: 283.89px;
+  border-radius: 50%;
+  position: absolute;
+  top: -400px;
+  left: -550px;
+  opacity: 0.1;
+}
+.gradiant2 {
+  background-image: linear-gradient(to bottom, #39d5ff, #ffffff, #f209db);
+  width: 283.89px;
+  height: 283.89px;
+  border-radius: 50%;
+  position: absolute;
+  top: -380px;
+  left: -400px;
+  opacity: 0.2;
+}
+
+.rotation {
+  transform: rotate(-22.72deg);
+}
+
+.bottomSection {
+  box-shadow: 0px 4px 15px #cbe4f4; /* x-offset, y-offset, blur-radius, color */
+}
+
+.rotate-mobile {
+  width: 373.14px;
+  height: 684.52px;
+  transform: rotate(21.22deg);
+}
+.round-css{
+  border-radius: 0 0 10px 10px;
+  border-bottom: 4px solid #CBE4F49C ;
+}
