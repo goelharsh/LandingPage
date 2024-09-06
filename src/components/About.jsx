@@ -5,7 +5,7 @@ const About = () => {
   const [formData, setFormData] = useState({
     name: "",
     service: "Select Service",
-    countryCode: "USA", 
+    countryCode: "USA",
     phone: "",
     email: "",
     message: "",
@@ -18,14 +18,16 @@ const About = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formData); 
+    console.log(formData);
   };
 
   return (
     <div className="w-full h-[656px] flex items-center gap-16 justify-around space-y-8">
       <div className="w-[655px] h-auto flex flex-col gap-5">
         <h2 className="text-[36px] font-bold">About Us</h2>
-        <p className="font-semibold">Lorem Ipsum is simply dummy text of the printing.</p>
+        <p className="font-semibold">
+          Lorem Ipsum is simply dummy text of the printing.
+        </p>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -37,12 +39,14 @@ const About = () => {
           more recently with desktop publishing software like Aldus PageMaker
           including versions of Lorem Ipsum.
         </p>
-        <CustomButton width={"164px"} height={"60px"} text={"Get Started"}/>
+        <CustomButton width={"164px"} height={"60px"} text={"Get Started"} />
       </div>
 
       <div className="w-[480px] h-[496px] border-[2px] border-blue-color rounded-md p-6 shadow-md bg-white">
         <form className="space-y-4" onSubmit={handleSubmit}>
-          <h2 className="text-xl font-semibold text-gray-800 mb-2">Contact Us</h2>
+          <h2 className="text-xl font-semibold text-gray-800 mb-2">
+            Contact Us
+          </h2>
 
           <input
             type="text"

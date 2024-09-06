@@ -4,28 +4,32 @@ import Mobile from "../assets/mobile.png";
 import Surgeon from "../assets/surgeon.png";
 import { FaStar } from "react-icons/fa6";
 import Time from "./Time";
+import CustomButton from "./CustomButton";
 
 const HeroSection = () => {
   return (
-    <div className="relative w-full max-w-[1275px] mx-auto flex items-center justify-between py-32 mt-20">
+    <div className="relative w-full max-w-[1275px] mx-auto flex items-center justify-between pt-28 mb-20 mt-20">
       {/* Left Section */}
       <div className="w-[673px] flex flex-col space-y-6">
         <h1 className="font-semibold text-5xl leading-tight">
           Empowering Clinics to Scale New Heights in{" "}
           <span className="text-blue-color">Healthcare.</span>
         </h1>
-        <p className="text-lg text-grey-color font-normal w-[614px]">
+        <p className="text-lg text-grey-color font-normal w-[580px]">
           Discover a seamless, efficient, and user-friendly platform designed to
           enhance clinic operations, empower doctors, and provide patients with
           the best care possible. Join us in transforming the future of
           healthcare today.
         </p>
+        <CustomButton text={"Get Started"} width={"164px"} height={"60px"} />
       </div>
 
       {/* Right Section */}
       <div className="relative w-[500px] h-[345px]">
         {/* Banner and Mobile Images */}
-        <img src={Banner} alt="Banner" className="w-full h-auto" />
+        <div className="gradiant1"></div>
+        <div className="gradiant2"></div>
+        <img src={Banner} alt="Banner" className="w-full h-auto z-50" />
 
         <div className="absolute top-[44px] left-[10px] z-10">
           <img src={Mobile} alt="Mobile" className="w-[142px] h-[261px]" />

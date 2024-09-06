@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Time = () => {
+const Time = ({padding, width, textSize}) => {
   const [selectedTime, setSelectedTime] = useState("09:00 AM");
 
   function handleButtonClick(time) {
@@ -8,9 +8,9 @@ const Time = () => {
   }
 
   return (
-    <div className="w-[220px] h-auto bg-white p-3 shadow-md round-css">
+    <div className={`${width ? width : 'w-[220px]'} h-auto bg-white p-3 shadow-md round-css ${padding ? padding : 0}`}>
       <div className="mb-2">
-        <h2 className="text-btn-color text-[10px] mb-1">Time</h2>
+        <h2 className={`text-btn-color ${textSize} mb-1`}>Time</h2>
         <div className="flex flex-wrap gap-2">
           {["09:00 AM", "11:00 AM", "03:00 PM"].map((time) => (
             <button

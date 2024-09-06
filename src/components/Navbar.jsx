@@ -18,9 +18,8 @@ const Navbar = () => {
                 items.map((item,index)=>(
                     <ul key={index}>
                         <Link to={item.link}>
-                        <li>{item.name}</li>
+                        <li className='font-normal'>{item.name}</li>
                         </Link>
-                      
                     </ul>
                 ))
             }

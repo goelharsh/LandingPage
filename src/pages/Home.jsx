@@ -22,7 +22,7 @@ const Home = () => {
         />
       </div>
 
-      <div className="w-full h-auto">
+      <div className="w-full h-auto mt-48">
         <Benefits
           position={"lg:flex-row-reverse"}
           className="top-[2560px] left-[72px]"
